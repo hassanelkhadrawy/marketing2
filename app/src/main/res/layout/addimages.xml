@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backdround"
+    android:orientation="vertical"
+    android:alpha="0.4"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/select_phto"
+        android:layout_width="wrap_content"
+        android:layout_height="183dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/person_img"
+        tools:ignore="VectorDrawableCompat" />
+
+    <Button
+        android:layout_margin="30dp"
+        android:id="@+id/choose"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_btn"
+        android:text="choose"
+        android:textColor="#fff" />
+
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorstyle"
+    tools:context="www.myapp.com.marketing.activities.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:weightSum="1">
+
+        <EditText
+
+            android:id="@+id/l_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_btn"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:ems="10"
+            android:hint="E-Mail"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/l_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_btn"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+
+        <Button
+
+            android:id="@+id/login"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/round_btn"
+            android:stateListAnimator="@anim/error_frame_in"
+            android:text="Login"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/create_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.05"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Let's get started.."
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorstyle"
+    tools:context="www.myapp.com.marketing.activities.User">
+
+    <jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rfreshmain">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/linked"
+        android:layout_width="95dp"
+        android:layout_height="112dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="action"
+        android:src="@drawable/login"
+        tools:ignore="OnClick" />
+
+
+</RelativeLayout>

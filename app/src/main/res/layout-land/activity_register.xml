@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorstyle"
+    android:padding="30dp"
+    tools:context="www.myapp.com.marketing.activities.Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/select_img"
+                android:layout_width="149dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/person_img" />
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <EditText
+                android:id="@+id/u_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <EditText
+                android:id="@+id/u_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPersonName"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <!--<EditText-->
+                <!--android:id="@+id/u_phone"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:ems="10"-->
+                <!--android:hint="Phone"-->
+                <!--android:inputType="textPersonName"-->
+                <!--android:textColor="#bcd102"-->
+                <!--android:textColorHint="#bcd102" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/u_address"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:ems="10"-->
+                <!--android:hint="Address"-->
+                <!--android:inputType="textPersonName"-->
+                <!--android:textColor="#bcd102"-->
+                <!--android:textColorHint="#bcd102" />-->
+
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/create_btn"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_btn"
+                android:text="Create"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

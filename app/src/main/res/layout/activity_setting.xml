@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorstyle"
+    tools:context="www.myapp.com.marketing.activities.Setting">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/s_img"
+        android:layout_width="130dp"
+        android:layout_height="108dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/person_img" />
+
+    <EditText
+        android:id="@+id/s_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/s_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/s_name"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:id="@+id/s_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+    <!--<EditText-->
+        <!--android:id="@+id/s_phone"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textColorHint="#ffffff"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Phone"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:layout_marginBottom="28dp"-->
+        <!--android:layout_above="@+id/save_btn"-->
+        <!--android:layout_alignParentStart="true" />-->
+    <!--<EditText-->
+        <!--android:id="@+id/s_address"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textColorHint="#ffffff"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Address"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:layout_above="@+id/s_phone"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginBottom="22dp" />-->
+
+
+    <Button
+        android:layout_marginTop="90dp"
+        android:id="@+id/save_btn"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_btn"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
+</RelativeLayout>

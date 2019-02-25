@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorstyle"
+    tools:context="www.myapp.com.marketing.activities.Setting">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/s_img"
+        android:layout_width="149dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/person_img"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/s_img"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/s_email"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/s_password"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp" />
+
+    <EditText
+        android:id="@+id/s_password"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/s_address"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp" />
+    <!--<EditText-->
+        <!--android:id="@+id/s_phone"-->
+        <!--android:textColor="#bcd102"-->
+        <!--android:textColorHint="#bcd102"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Phone"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:layout_marginBottom="28dp"-->
+        <!--android:layout_above="@+id/save_btn"-->
+        <!--android:layout_alignParentStart="true" />-->
+    <!--<EditText-->
+        <!--android:id="@+id/s_address"-->
+        <!--android:textColor="#bcd102"-->
+        <!--android:textColorHint="#bcd102"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Address"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:layout_above="@+id/s_phone"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginBottom="22dp" />-->
+
+
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/save_btn"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/round_btn"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

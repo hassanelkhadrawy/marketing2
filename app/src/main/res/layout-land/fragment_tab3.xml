@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backdround"
+    tools:context="www.myapp.com.marketing.Tabs.Tab3">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="96dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher_round"
+
+                />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="22dp"
+                android:textStyle="italic" />
+
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclelistprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:layout_gravity="center"
+                android:text="create post"
+                android:textColor="#014368"
+                android:stateListAnimator="@anim/error_frame_in"
+                android:id="@+id/create_post"
+                android:background="@drawable/round_btn"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="93dp"
+        android:layout_marginEnd="17dp"
+        app:backgroundTint="#bb0486ce"
+        app:menu_colorPressed="@color/colorAccent"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_textColor="#ffffff"
+        app:menu_openDirection="up">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floatingbtndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_black_24dp"
+            app:backgroundTint="#bb0486ce"
+            app:fab_label="delete"
+            app:fab_size="mini" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

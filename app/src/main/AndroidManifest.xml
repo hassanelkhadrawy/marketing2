@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="www.myapp.com.marketing">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="Marketing"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:label">
+        <activity android:name=".activities.Setting" />
+        <activity android:name=".activities.Register" />
+        <activity android:name=".activities.Login" />
+        <activity
+            android:name=".activities.displayImages"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             />
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activities.notConnecting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.Comments" />
+        <activity android:name=".activities.Sureing" />
+        <activity
+            android:name=".activities.Full_Image_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_full__image_"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".activities.User" />
+        <activity android:name=".activities.about" />
+        <activity android:name=".activities.PersonalPostImages"
+            android:theme="@style/display_theme"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/colorstyle"
+    tools:context="www.myapp.com.marketing.activities.Comments">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/refresh">-->
+    <jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/refresh">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/like"
+                    android:layout_width="53dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="0.00"
+                    android:background="@drawable/like" />
+
+                <TextView
+                    android:id="@+id/likenum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/comment"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/comment" />
+
+                <TextView
+                    android:id="@+id/commentnum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclelistcomments"
+                android:layout_width="match_parent"
+                android:layout_height="446dp"
+                android:layout_above="@+id/linearLayout"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout2">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+</jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/writecommment"
+            android:layout_width="233dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.93"
+            android:hint="write a comment..."
+            android:textColor="#fff"
+            android:textColorHint="#fff"/>
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:src="@drawable/ic_send_black_24dp" />
+        /
+    </LinearLayout>
+    <!--</LinearLayout>-->
+</RelativeLayout>
